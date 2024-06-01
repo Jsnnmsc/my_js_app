@@ -1,12 +1,16 @@
 .calculator {
-    width: 350px;
+    width: 320px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     background-color: grey;
-    padding: 10px;
-    border: 1px solid black;
     margin: auto;
+    padding: 10px;
+}
+
+.board {
+    display: inline-block;
+    margin: 10px;
 }
 
 .display {
@@ -18,21 +22,17 @@
     border-radius: 5px;
 }
 
-.buttons {
-    display: inline-block;
-    margin: 10px;
-}
-
 .btn {
     background-color: #323232;
     color: white;
-    padding: 5%;
-    border: 0px;
-    border-radius: 50%;
     width: 60px;
     height: 60px;
-    margin: 5px;
     font-size: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: 0px;
+    padding: 5%;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .btn-operator {
-    background-color: darkorange;
+    background-color: coral;
 }
 
 .btn-0 {
@@ -50,8 +50,13 @@
     border-radius: 30px;
 }
 
-.btn:hover,
-.btn-0:hover {
+.btn:hover{
     background-color: white;
-    color:#323232;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.btn:active{
+    background-color: darkred;
+    color: white;
 }
